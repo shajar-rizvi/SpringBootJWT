@@ -1,4 +1,8 @@
 spring:
+  data:
+    mongodb:
+      port: 27017
+      database: spring_boot_mongo_app
   datasource:
     url: jdbc:h2:mem:test_db;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
     # url: jdbc:mysql://localhost:3306/user_db
@@ -35,3 +39,4 @@ UserController:
   delete: Deletes specific user by username
   search: Returns specific user by username
   me: Returns current user's data
+
